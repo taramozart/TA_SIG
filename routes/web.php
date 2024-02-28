@@ -13,6 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+// Route::get('/login/admin', function () {
+//     return view('login.admin');
+// })->name('/login/admin');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/admin/data-baru-dokter', function () {
+    return view('admin.data-baru-dokter');
+})->name('/admin/data-baru-dokter');
+
+Route::get('/admin/kelola-data-dokter', function () {
+    return view('admin.kelola-data-dokter');
+})->name('/admin/kelola-data-dokter');
+
+Route::get('/admin/pengajuan-dokter', function () {
+    return view('admin.pengajuan-dokter');
+})->name('/admin/pengajuan-dokter');
+
+Route::get('/admin/data-pengajuan', function () {
+    return view('admin.data-pengajuan');
+})->name('/admin/data-pengajuan');
+
+Route::get('/admin/artikel-kesehatan', function () {
+    return view('admin.artikel-kesehatan');
+})->name('/admin/artikel-kesehatan');
