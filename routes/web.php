@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\GeneralPage;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,3 +44,12 @@ Route::get('/admin/data-pengajuan', function () {
 Route::get('/admin/artikel-kesehatan', function () {
     return view('admin.artikel-kesehatan');
 })->name('/admin/artikel-kesehatan');
+
+
+
+Route::controller(GeneralPage::class) -> group(function () {
+    Route::get('/login', 'login');
+    Route::get('/lupa-password', 'lupapassword');
+    Route::get('/otp-password', 'otppassword');
+    Route::get('/password-baru', 'passwordbaru');
+});
