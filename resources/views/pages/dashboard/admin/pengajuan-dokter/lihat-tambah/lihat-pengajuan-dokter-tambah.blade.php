@@ -16,13 +16,13 @@
     <x-sidebar-admin />
     <div class="pl-[280px] min-h-screen pt-10 pr-5 pb-[90px] full-height">
         <div class="m-10">
-            <div class="text-end items-end justify-end text-black text-[32px]">Selamat Datang,
+            <div class="text-end items-end justify-end text-black text-[32px] font-bold">Selamat Datang,
                 Admin
             </div>
-            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5">Pengajuan
+            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5 font-bold">Pengajuan
                 Dokter</div>
             <div class="bg-white rounded-md h-full">
-                <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
+                <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar p-10">
                     {{-- isi konten disini --}}
                     <div class="p-10">
                         <div class="flex justify-between">
@@ -37,7 +37,7 @@
                                 <div class="mb-4 flex mt-5">
                                     <a href="/path/to/your/file.pdf" download>
                                         <div
-                                            class="w-[120px] flex gap-3 text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-4 rounded-lg">
+                                            class="w-[120px] flex gap-3 text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-4 rounded-lg font-bold">
                                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.5 17.7083V3.125" stroke="white" stroke-width="2"
@@ -90,6 +90,14 @@
                                             </tr>
                                             <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
                                                 <td class="px-3 py-2 font-bold text-[16px]">
+                                                    No. SIP
+                                                </td>
+                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                    123/abc/56789
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                <td class="px-3 py-2 font-bold text-[16px]">
                                                     Kecamatan
                                                 </td>
                                                 <td class="px-5 py-2 border-b border-[#D9D9D9]">
@@ -105,6 +113,14 @@
                                                     Sukarame Bandar Lampung
                                                 </td>
                                             </tr>
+                                            <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                <td class="px-3 py-2 font-bold text-[16px]">
+                                                    Link maps
+                                                </td>
+                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                    https://maps.app.goo.gl/CJV9TWDKhNqoYcHm6
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -114,7 +130,7 @@
                             <div class="div">
                                 <button>
                                     <div
-                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#89D389] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block">
+                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#89D389] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block font-bold">
                                         Terima
                                     </div>
                                 </button>
@@ -122,7 +138,7 @@
                             <div class="div">
                                 <button>
                                     <div
-                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#FF4747] hover:bg-[#903b3b] text-white py-2 px-2 rounded-lg inline-block">
+                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#FF4747] hover:bg-[#903b3b] text-white py-2 px-2 rounded-lg inline-block font-bold">
                                         Tolak
                                     </div>
                                 </button>
@@ -130,7 +146,7 @@
                         </div>
                     </div>
                     <div class="flex mt-[10px] ml-2">
-                        <button>
+                        <a href="/pengajuan-dokter">
                             <div
                                 class="w-[45px] text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -141,7 +157,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -16,10 +16,10 @@
     <x-sidebar-admin />
     <div class="pl-[280px] min-h-screen pt-10 pr-5 pb-[90px] full-height">
         <div class="m-10">
-            <div class="text-end items-end justify-end text-black text-[32px]">Selamat Datang,
+            <div class="text-end items-end justify-end text-black text-[32px] font-bold">Selamat Datang,
                 Admin
             </div>
-            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5">Pengajuan
+            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5 font-bold">Pengajuan
                 Dokter</div>
             <div class="bg-white rounded-md h-full">
                 <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
@@ -39,7 +39,7 @@
                                                 <td class="px-3 py-2 font-bold">
                                                     Nama Dokter
                                                 </td>
-                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                <td class="px-5 py-2 border-b border-gray-700">
                                                     Dr. Ariella
                                                 </td>
                                             </tr>
@@ -47,7 +47,7 @@
                                                 <td class="px-3 py-2 font-bold">
                                                     Spesialisasi
                                                 </td>
-                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                <td class="px-5 py-2 border-b border-gray-700">
                                                     Spesialis Orthopedi
                                                 </td>
                                             </tr>
@@ -55,7 +55,7 @@
                                                 <td class="px-3 py-2 font-bold">
                                                     Nomor Kontak
                                                 </td>
-                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                <td class="px-5 py-2 border-b border-gray-700">
                                                     123456789
                                                 </td>
                                             </tr>
@@ -63,7 +63,7 @@
                                                 <td class="px-3 py-2 font-bold">
                                                     Jadwal Praktik
                                                 </td>
-                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                <td class="px-5 py-2 border-b border-gray-700">
                                                     123456789
                                                 </td>
                                             </tr>
@@ -71,7 +71,7 @@
                                                 <td class="px-3 py-2 font-bold">
                                                     Kecamatan
                                                 </td>
-                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                <td class="px-5 py-2 border-b border-gray-700">
                                                     Sukarame
                                                 </td>
                                             </tr>
@@ -79,7 +79,7 @@
                                                 <td class="px-3 py-2 font-bold">
                                                     Alamat
                                                 </td>
-                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                <td class="px-5 py-2 border-b border-gray-700">
                                                     Jalan nangka 1 no 3 Kec.
                                                     Sukarame Bandar Lampung
                                                 </td>
@@ -127,6 +127,14 @@
                                             </tr>
                                             <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
                                                 <td class="px-3 py-2 font-bold">
+                                                    No. SIP
+                                                </td>
+                                                <td class="px-5 py-2 border-b border-gray-700">
+                                                    123/abc/56789
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                <td class="px-3 py-2 font-bold">
                                                     Kecamatan
                                                 </td>
                                                 <td class="px-5 py-2 border-b border-gray-700">
@@ -134,12 +142,48 @@
                                                 </td>
                                             </tr>
                                             <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
-                                                <td class="px-3 py-2 font-bold">
+                                                <td class="px-3 py-2 font-bold ">
                                                     Alamat
                                                 </td>
                                                 <td class="px-5 py-2 border-b border-gray-700">
                                                     Jalan nangka 1 no 3 Kec.
                                                     Sukarame Bandar Lampung
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                <td class="px-3 py-2 font-bold">
+                                                    Link maps
+                                                </td>
+                                                <td class="px-5 py-2 border-b border-gray-700">
+                                                    https://maps.app.goo.gl/CJV9TWDKhNqoYcHm6
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                <td class="px-3 py-2 font-bold">
+                                                    Gambar
+                                                </td>
+                                                <td class="px-5 py-2 border-b border-gray-700">
+                                                    <div class="mb-4 flex mt-5">
+                                                        <a href="/path/to/your/file.pdf" download>
+                                                            <div
+                                                                class="w-[120px] flex gap-3 text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-4 rounded-lg font-bold">
+                                                                <svg width="25" height="25" viewBox="0 0 25 25"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 17.7083V3.125" stroke="white"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M6.25 11.4583L12.5 17.7083L18.75 11.4583"
+                                                                        stroke="white" stroke-width="2"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                    <path d="M19.7923 21.875H5.20898" stroke="white"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                                Unduh
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -151,7 +195,7 @@
                             <div class="div">
                                 <button>
                                     <div
-                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#89D389] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block">
+                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#89D389] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block font-bold">
                                         Terima
                                     </div>
                                 </button>
@@ -159,7 +203,7 @@
                             <div class="div">
                                 <button>
                                     <div
-                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#FF4747] hover:bg-[#903b3b] text-white py-2 px-2 rounded-lg inline-block">
+                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#FF4747] hover:bg-[#903b3b] text-white py-2 px-2 rounded-lg inline-block font-bold">
                                         Tolak
                                     </div>
                                 </button>
@@ -167,7 +211,7 @@
                         </div>
                     </div>
                     <div class="flex mt-[10px] ml-2">
-                        <button>
+                        <a href="/pengajuan-dokter">
                             <div
                                 class="w-[45px] text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -178,7 +222,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

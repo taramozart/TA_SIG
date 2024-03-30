@@ -16,17 +16,18 @@
     <x-sidebar-admin />
     <div class="pl-[280px] min-h-screen pt-10 pr-5 pb-[90px] full-height">
         <div class="m-10">
-            <div class="text-end items-end justify-end text-black text-[32px]">Selamat Datang,
+            <div class="text-end items-end justify-end text-black text-[32px] font-bold">Selamat Datang,
                 Admin
             </div>
-            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5">Data Dokter Spesialis
+            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5 font-bold">Data Dokter
+                Spesialis
             </div>
             <div class="bg-white rounded-md h-full">
                 <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
                     {{-- isi konten disini --}}
                     <div class="p-10">
                         <div class="absolute -mt-5 -ml-5">
-                            <button>
+                            <a href="/kelola-data-dokter">
                                 <div
                                     class="w-[45px] text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -37,10 +38,10 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </div>
-                            </button>
+                            </a>
                         </div>
                         <div class="ml-10 -mt-5">
-                            <div class="flex justify-between">
+                            <div class="flex justify-between mb-5">
                                 <div class="text-black font-bold text-[22px]">Info</div>
                             </div>
                             <div class="flex justify-between gap-10 text-black">
@@ -168,9 +169,25 @@
                             </div>
                         </div>
                         <div class="border-b w-[100%] mt-10 mb-10"></div>
-                        <div class="overflow-y-auto overflow-x-auto hide-scrollbar">
+                        <div class="overflow-y-auto overflow-x-auto hide-scrollbar h-[500px]">
                             <?php
                             $dummyData = [
+                                [
+                                    'nama' => 'Unknown',
+                                    'tanggal' => '28 Oktober 2022',
+                                    'waktu' => '10.00 wib',
+                                    'rating' => 4,
+                                    'review' => 'This is my third Invicta Pro Diver. They are just fantastic value for money. This one arrived yesterday and the first thing I did was set the time, popped on an identical strap from another Invicta and went in the shower with it to test the waterproofing.... No problems.',
+                                    'gambar' => '/docs/images/people/profile-picture-5.jpg',
+                                ],
+                                [
+                                    'nama' => 'Unknown',
+                                    'tanggal' => '28 Oktober 2022',
+                                    'waktu' => '10.00 wib',
+                                    'rating' => 4,
+                                    'review' => 'This is my third Invicta Pro Diver. They are just fantastic value for money. This one arrived yesterday and the first thing I did was set the time, popped on an identical strap from another Invicta and went in the shower with it to test the waterproofing.... No problems.',
+                                    'gambar' => '/docs/images/people/profile-picture-5.jpg',
+                                ],
                                 [
                                     'nama' => 'Unknown',
                                     'tanggal' => '28 Oktober 2022',
@@ -208,7 +225,7 @@
                                                 <p><?php echo $data['nama']; ?><span
                                                         class="pl-2 text-[#8F0202]"><?php echo $data['tanggal']; ?></span>
                                                     <time datetime="2014-08-16 19:00"
-                                                        class="block text-sm text-gray-500 dark:text-gray-400"><?php echo $data['waktu']; ?></time>
+                                                        class="block text-sm text-black"><?php echo $data['waktu']; ?></time>
                                                 </p>
                                             </div>
                                         </div>
@@ -226,11 +243,11 @@
                                                     <?php echo $data['review']; ?>
                                                 </h3>
                                             </div>
-                                            <p class="mb-2 text-gray-500 dark:text-gray-400"><?php echo $data['review']; ?></p>
+                                            <p class="mb-2 text-black"><?php echo $data['review']; ?></p>
                                         </div>
                                     </div>
                                     <div class="w-[10%]">
-                                        <div class="text-[#8F8F8F] text-[16px]">
+                                        <div class="text-[#8F8F8F] text-[16px] font-bold">
                                             <button class="cursor-pointer delete-button" title="Delete"
                                                 type="button" data-index="">
                                                 Hapus

@@ -83,6 +83,3 @@ Route::controller(GeneralPage::class) -> group(function () {
     // akhir admin
 
 });
-
-
-

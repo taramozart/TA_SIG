@@ -16,13 +16,13 @@
     <x-sidebar-admin />
     <div class="pl-[280px] min-h-screen pt-10 pr-5 pb-[90px] full-height">
         <div class="m-10">
-            <div class="text-end items-end justify-end text-black text-[32px]">Selamat Datang,
+            <div class="text-end items-end justify-end text-black text-[32px font-bold]">Selamat Datang,
                 Admin
             </div>
             <div class="rounded h-full pb-1 mt-5 ml-0 mr-10">
                 <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
                     {{-- isi konten disini --}}
-                    <div class="flex justify-start text-black text-[30px]">Edit Artikel Baru</div>
+                    <div class="flex justify-start text-black text-[30px] font-bold">Edit Artikel Baru</div>
                     <div class="flex justify-between gap-5 mt-5">
                         <div class="w-[60%] mb-4">
                             <label htmlFor="name" class="text-black">Subtittle</label>
@@ -41,12 +41,10 @@
                                 </label>
                                 <span id="file-name" class="text-[#8F8F8F] text-sm ml-2">Tidak ada gambar.</span>
                             </div>
-
                             <script>
                                 function displayFileName() {
                                     const input = document.getElementById('image');
                                     const fileNameSpan = document.getElementById('file-name');
-
                                     if (input.files.length > 0) {
                                         const fileName = input.files[0].name;
                                         fileNameSpan.textContent = fileName;
@@ -55,7 +53,6 @@
                                     }
                                 }
                             </script>
-
                         </div>
                     </div>
                     <div class="div">
@@ -67,20 +64,26 @@
                         </div>
                     </div>
                     <div class="flex justify-between gap-5 mt-5">
-                        <div class="mb-4">
+                        <div class="mb-4 w-full">
+                            <label htmlFor="name" class="text-black">Sumber Artikel</label>
+                            <input type="text" id="name"
+                                class="border border-[#297785] text-gray-900 text-sm rounded-md focus:ring-[#297785] focus:border-[#297785] px-2 w-full"
+                                placeholder="Masukkan Penulis Artikel" required />
+                        </div>
+                        <div class="mb-4 w-full">
                             <label htmlFor="name" class="text-black">Penulis Artikel</label>
                             <input type="text" id="name"
                                 class="border border-[#297785] text-gray-900 text-sm rounded-md focus:ring-[#297785] focus:border-[#297785] px-2 w-full"
                                 placeholder="Masukkan Penulis Artikel" required />
                         </div>
-                        <div class="mb-4 flex mt-5">
-                            <a href="">
-                                <div
-                                    class="w-[145px] text-center m-auto cursor-pointer bg-[#6C806C] text-white py-2 px-4 rounded-lg inline-block">
-                                    Ubah Artikel
-                                </div>
-                            </a>
-                        </div>
+                    </div>
+                    <div class="mb-4 flex mt-5 justify-end">
+                        <a href="">
+                            <div
+                                class="w-[145px] text-center m-auto cursor-pointer bg-[#6C806C] text-white py-2 px-4 rounded-lg inline-block font-bold">
+                                Ubah Artikel
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

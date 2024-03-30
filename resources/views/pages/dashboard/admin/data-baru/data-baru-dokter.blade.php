@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="w-[40%]">
-                <div class="text-black text-[26px] font-bold mb-5">Peta Kota Bandar Lampung</div>
+                <div class="text-black text-[26px] font-bold mb-5">Tambah Data Lokasi</div>
                 <div class="w-full mb-1">
                     <label htmlFor="name" class="text-black font-bold">Nama Dokter</label>
                     <input type="text" id="name"
@@ -38,9 +38,13 @@
                 </div>
                 <div class="w-full mb-1">
                     <label htmlFor="name" class="text-black font-bold">Bidang Spesialisasi</label>
-                    <input type="text" id="name"
-                        class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full bg-transparent"
-                        placeholder="Masukkan Bidang Spesialisasi" required />
+                    <select id="name"
+                        class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full h-[40px] bg-transparent"
+                        required>
+                        <option value="">Pilih Bidang Spesialisasi</option>
+                        <option value="anak">Anak</option>
+                        <option value="penyakit dalam">Penyakit Dalam</option>
+                    </select>
                 </div>
                 <div class="w-full mb-1">
                     <label htmlFor="name" class="text-black font-bold">Nomor Kontak</label>
@@ -55,10 +59,27 @@
                         placeholder="Masukkan Jadwal Praktik" required />
                 </div>
                 <div class="w-full mb-1">
-                    <label htmlFor="name" class="text-black font-bold">Kecamatan</label>
-                    <input type="text" id="name"
-                        class=" border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full bg-transparent"
-                        placeholder="Masukkan Kecamatan" required />
+                    <label for="kecamatan" class="text-black font-bold">Kecamatan</label>
+                    <select id="kecamatan" name="kecamatan"
+                        class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full h-[40px] bg-transparent"
+                        required>
+                        <option value="">Pilih Kecamatan</option>
+                        <option value="Bandar Lampung">Bandar Lampung</option>
+                        <option value="Rajabasa">Rajabasa</option>
+                        <option value="Tanjung Karang Pusat">Tanjung Karang Pusat</option>
+                        <option value="Tanjung Karang Timur">Tanjung Karang Timur</option>
+                        <option value="Tanjung Karang Barat">Tanjung Karang Barat</option>
+                        <option value="Tanjung Senang">Tanjung Senang</option>
+                        <option value="Tanjung Karang Timur Kota">Tanjung Karang Timur Kota</option>
+                        <option value="Tanjung Karang Barat Kota">Tanjung Karang Barat Kota</option>
+                        <option value="Kedamaian">Kedamaian</option>
+                        <option value="Teluk Betung Utara">Teluk Betung Utara</option>
+                        <option value="Teluk Betung Selatan">Teluk Betung Selatan</option>
+                        <option value="Kemiling">Kemiling</option>
+                        <option value="Panjang">Panjang</option>
+                        <option value="Tanjung Karang Timur Kota">Tanjung Karang Timur Kota</option>
+                        <option value="Tanjung Karang Barat Kota">Tanjung Karang Barat Kota</option>
+                    </select>
                 </div>
                 <div class="w-full mb-1 flex flex-col">
                     <label for="name" class="text-black font-bold mb-1">Alamat</label>
@@ -66,14 +87,14 @@
                         class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full h-[70px] bg-transparent"
                         placeholder="Masukkan Alamat"></textarea>
                 </div>
-                <div class="flex justify-between gap-5 mb-1">
-                    <div class="div">
+                <div class="flex justify-between gap-2 mb-1">
+                    <div class="w-full">
                         <label htmlFor="name"class="text-black font-bold">Latitude</label>
                         <input type="number" id="name"
                             class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full bg-transparent"
                             placeholder="Masukkan Latitude" required />
                     </div>
-                    <div class="div">
+                    <div class="w-full">
                         <label htmlFor="name" class="text-black font-bold">Longitude</label>
                         <input type="number" id="name"
                             class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full bg-transparent"
@@ -86,7 +107,7 @@
                         <input type="file" id="image" accept="image/*" class="hidden" required
                             onchange="displayFileName()" />
                         <label for="image"
-                            class="cursor-pointer bg-[#6C806C] text-white py-2 px-4 rounded-lg inline-block">
+                            class="cursor-pointer bg-[#6C806C] text-white py-2 px-4 rounded-lg inline-block font-bold">
                             Unggah Gambar
                         </label>
                         <span id="file-name" class="text-[#8F8F8F] text-sm ml-2">Tidak ada gambar.</span>
@@ -106,7 +127,7 @@
                 <div class="mb-4 flex mt-5 m-auto justify-center">
                     <a href="">
                         <div
-                            class="w-[145px]  text-center m-auto cursor-pointer bg-[#6C806C] text-white py-2 px-4 rounded-lg inline-block">
+                            class="w-[145px] font-bold text-center m-auto cursor-pointer bg-[#6C806C] text-white py-2 px-4 rounded-lg inline-block">
                             Simpan
                         </div>
                     </a>

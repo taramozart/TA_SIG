@@ -16,10 +16,10 @@
     <x-sidebar-admin />
     <div class="pl-[280px] min-h-screen pt-10 pr-5 pb-[90px] full-height">
         <div class="m-10">
-            <div class="text-end items-end justify-end text-black text-[32px]">Selamat Datang,
+            <div class="text-end items-end justify-end text-black text-[32px] font-bold">Selamat Datang,
                 Admin
             </div>
-            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5">Pengajuan
+            <div class="flex justify-start items-start text-start text-[30px] text-black mb-5 font-bold">Pengajuan
                 Dokter</div>
             <div class="bg-white rounded-md h-full">
                 <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
@@ -90,6 +90,14 @@
                                             </tr>
                                             <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
                                                 <td class="px-3 py-2 font-bold text-[16px]">
+                                                    No. SIP
+                                                </td>
+                                                <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                    123/abc/56789
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                <td class="px-3 py-2 font-bold text-[16px]">
                                                     Kecamatan
                                                 </td>
                                                 <td class="px-5 py-2 border-b border-[#D9D9D9]">
@@ -112,7 +120,7 @@
                         </div>
                     </div>
                     <div class="flex mt-20 ml-2">
-                        <button>
+                        <a href="/data-pengajuan">
                             <div
                                 class="w-[45px] text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -123,7 +131,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

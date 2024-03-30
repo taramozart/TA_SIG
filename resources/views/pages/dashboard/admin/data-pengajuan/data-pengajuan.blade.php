@@ -15,13 +15,14 @@
 <body class="bg-[#FAF1E4]">
     <x-sidebar-admin />
     <div class="pl-[280px] min-h-screen pt-2 pr-5 pb-[85px] full-height">
-        <div class="flex justify-end pb-2">
-            <div class="text-center items-center justify-center text-black font-bold text-[34px]">Selamat Datang, Admin
-            </div>
-        </div>
         <div class="rounded h-full pb-1 mt-5">
-            <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
+            <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar p-10">
                 {{-- isi konten disini --}}
+                <div class="flex justify-end mb-10">
+                    <div class="text-center items-center justify-center text-black font-bold text-[34px]">Selamat
+                        Datang, Admin
+                    </div>
+                </div>
                 <div class="flex justify-between text-black">
                     <div class="text-[30px] font-bold">Data Pengajuan Dokter</div>
                     <div class="flex justify-end text-center items-center">

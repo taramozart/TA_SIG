@@ -16,11 +16,11 @@
     <x-sidebar-admin />
     <div class="pl-[280px] min-h-screen pt-10 pr-5 pb-[90px] full-height">
         <div class="">
-            <div class="text-end items-end justify-end text-black text-[32px]">Selamat Datang,
+            <div class="text-end items-end justify-end text-black text-[32px] font-bold">Selamat Datang,
                 Admin
             </div>
-            <div class="flex justify-start text-[30px] mb-5 ml-5 text-black">Pengajuan Dokter</div>
-            <div class="bg-white rounded-md h-full w-[50%] m-auto">
+            <div class="flex justify-start text-[30px] mb-5 ml-5 text-black font-bold">Pengajuan Dokter</div>
+            <div class="bg-white rounded-md h-full w-[70%] m-auto">
                 <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
                     {{-- isi konten disini --}}
                     <div class="p-5">
@@ -68,6 +68,14 @@
                                             </tr>
                                             <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
                                                 <td class="px-3 py-2 font-bold">
+                                                    No. SIP
+                                                </td>
+                                                <td class="px-5 py-2 border-b border-gray-700">
+                                                    123/abc/56789
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                <td class="px-3 py-2 font-bold">
                                                     Kecamatan
                                                 </td>
                                                 <td class="px-5 py-2 border-b border-gray-700">
@@ -92,7 +100,7 @@
                             <div class="div">
                                 <button>
                                     <div
-                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#89D389] text-white py-2 px-2 rounded-lg inline-block">
+                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#89D389] text-white py-2 px-2 rounded-lg inline-block font-bold">
                                         Terima
                                     </div>
                                 </button>
@@ -100,7 +108,7 @@
                             <div class="div">
                                 <button>
                                     <div
-                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#FF4747] text-white py-2 px-2 rounded-lg inline-block">
+                                        class="w-[116px] text-center m-auto cursor-pointer bg-[#FF4747] text-white py-2 px-2 rounded-lg inline-block font-bold">
                                         Tolak
                                     </div>
                                 </button>
@@ -108,7 +116,7 @@
                         </div>
                     </div>
                     <div class="flex mt-[10px] ml-2">
-                        <button>
+                        <a href="/pengajuan-dokter">
                             <div
                                 class="w-[45px] text-center m-auto cursor-pointer bg-[#6C806C] hover:bg-[#475447] text-white py-2 px-2 rounded-lg inline-block">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -119,7 +127,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

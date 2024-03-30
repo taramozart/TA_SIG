@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class GeneralPage extends Controller
 {
-     // Awal login
-     function login () {
+    // Awal login
+    function login () {
         return view('pages/dashboard/login');
     }
     function lupapassword () {

@@ -14,17 +14,17 @@
 
 <body class="bg-[#FAF1E4]">
     <x-sidebar-admin />
-    <div class="pl-[280px] min-h-screen pt-10 pr-5 pb-[90px] full-height">
+    <div class="pl-[280px] min-h-screen pt-5 pr-5 pb-[90px] full-height">
         <div class="m-10">
-            <div class="text-end items-end justify-end text-black text-[32px]">Selamat Datang,
+            <div class="text-end items-end justify-end text-black text-[32px] font-bold">Selamat Datang,
                 Admin
             </div>
             <div class="bg-white rounded-md h-full w-full m-auto mt-10">
                 <div class="max-h-[calc(100%-1rem)] overflow-y-auto overflow-x-auto hide-scrollbar">
                     {{-- isi konten disini --}}
-                    <div class="p-5">
+                    <div class="p-10">
                         <div class="flex justify-between">
-                            <div class="text-black text-[30px]">Lorem Ipsum is simply dummy text</div>
+                            <div class="text-black text-[30px] font-bold">Lorem Ipsum is simply dummy text</div>
                             <div class="text-[16px]">Senin, 20 Oktober 2023</div>
                         </div>
                         <div class="flex m-auto justify-center items-center mt-5">
@@ -47,8 +47,10 @@
                             of
                             Lorem Ipsum.
                         </div>
-                        <div class="flex justify-end mt-5">
-                            Penulis : Budi Susanto
+                        <div class="flex justify-between mt-10">
+                            <div class="div">Sumber Referensi :
+                                https://maps.app.goo.glCJV9TWDKhNqoYcHm6 </div>
+                            <div class="div">Penulis : Budi Susanto</div>
                         </div>
                     </div>
                 </div>
