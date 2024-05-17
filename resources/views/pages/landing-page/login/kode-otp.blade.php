@@ -45,7 +45,7 @@
         <div
             class="left w-full md:w-1/2 lg:w-1/2 flex-col bg-white items-center justify-center lg:flex relative hidden">
             <div class="">
-                <Image src="/Images/logo-login.png" alt="logo-dashboard" width={500} height={500} />
+                <Image src="/Images/logo-login.svg" alt="logo-dashboard" width={500} height={500} />
             </div>
         </div>
         <div class="w-full md:w-1/2 relative">

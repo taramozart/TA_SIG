@@ -51,7 +51,7 @@
             
             <div class="">
                 <Image
-                    src="/Images/logo-login.png"
+                    src="/Images/logo-login.svg"
                     alt="logo-dashboard" width={500} height={500} />
             </div>
         </div>

@@ -54,7 +54,7 @@
             </div>
             <div class="">
                 <Image
-                    src="https://s3-alpha-sig.figma.com/img/05fc/6713/e90722a3ed8e8543967d54476d0f12e7?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ABKZxeaV5akDwDYmwv3xZdVpBqjGgk4WOxlS3YGBQXuqNnZucCaovb8H-IkcbR0BsssLDl29LbPK8M70wltSkABwffqdG6HMWUyiO-DGRJOUTLq-c4RD7otolURyJzB72gBJ5d7AxX0qJepQoV4D9FnWt0E8Zgqzr5aMEefM3f9-f1t2Ho~6vRddseSohNcmTnP4UFhZ68U~3ojUQiWEJLyz2pSXvHZ4k2u7zPYl-31v25DCFnVyH0cyDfsynh2~zuF2pkufBEuGD3bOHvJ~FVl-QTtJqPCD0WtsZUZFnyok3N8ak~PXzoW78Hc-aA1tJ3j3q-I~~bSIBqLDR-PyTw__"
+                    src="/Images/logo-login.svg"
                     alt="logo-dashboard" width={500} height={500} />
             </div>
         </div>

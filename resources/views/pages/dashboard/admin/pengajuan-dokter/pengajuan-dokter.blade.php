@@ -10,6 +10,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+    {{-- Awal Flowbite --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    {{-- Akhir Flowbite --}}
 </head>
 
 <body class="bg-[#FAF1E4]">
@@ -83,10 +87,11 @@
                                                 <div class="flex justify-center items-center m-auto text-center">Lihat
                                                 </div>
                                             </a>
-                                            <a href="/lihat-data-pengajuan" title="Lihat">
-                                                <div class="flex justify-center items-center m-auto text-center">Terima
-                                                </div>
-                                            </a>
+                                            <div>
+                                                <button class="flex justify-center items-center m-auto text-center" 
+                                                data-modal-target="popup-modal-1" data-modal-toggle="popup-modal-1">Terima
+                                                </button>
+                                            </div>
                                             <div class="div">
                                                 <button class="p-1 rounded-md cursor-pointer delete-button text-red-500"
                                                     title="Delete" type="button" data-index="<?= $index ?>">
@@ -95,78 +100,113 @@
                                             </div>
                                             <?php endforeach; ?>
                                             <!-- Modal -->
-                                            <div id="popup-modal" tabindex="-1" aria-hidden="true"
+
+
+                                            <div id="popup-modal-1" tabindex="-1" aria-hidden="true"
                                                 class="z-50 hidden fixed top-0 right-0 left-[260px] bottom-0 flex items-center justify-center backdrop-blur-sm bg-opacity-50">
                                                 <div class="relative p-4 w-full max-w-md max-h-full">
                                                     <div class="relative bg-[#84A584] rounded-lg shadow">
-                                                        <button type="button"
-                                                            class="absolute top-3 end-2.5 text-white bg-transparent bg-[#534B3C] hover:bg-[#443c2e] rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
-                                                            data-modal-hide="popup-modal-delete">
-                                                            <svg class="w-3 h-3" aria-hidden="true"
-                                                                xmlns="http://www.w3.org/2000/svg" fill="white"
-                                                                viewBox="0 0 14 14">
-                                                                <path stroke="white" stroke-linecap="round"
-                                                                    stroke-linejoin="round" stroke-width="2"
-                                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                                        <button  type="button"class="absolute top-3 end-2.5 text-white bg-transparent bg-[#534B3C] hover:bg-[#443c2e] rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="popup-modal-1">
+                                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 14 14">
+                                                            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                                                             </svg>
-                                                            <span class="sr-only">Close modal</span>
+                                                        <span class="sr-only">Close modal</span>
                                                         </button>
-                                                        <div class="p-4 md:p-5 text-center">
-                                                            <svg class="mx-auto mb-4 text-white w-12 h-12"
-                                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                                fill="none" viewBox="0 0 20 20">
-                                                                <path stroke="currentColor" stroke-linecap="round"
-                                                                    stroke-linejoin="round" stroke-width="2"
-                                                                    d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                                            </svg>
-                                                            <h3 class="mb-5 text-lg font-normal text-white ">
-                                                                Anda Yakin Ingin Menolak Dokter?</h3>
-                                                            <button data-modal-hide="popup-modal-ya" type="button"
-                                                                class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
-                                                                Ya
-                                                            </button>
-                                                            <button data-modal-hide="popup-modal-tidak"
-                                                                aria-hidden="true" type="button"
-                                                                class="py-2.5 px-5 ms-3 text-sm font-medium rounded-lg bg-[#534B3C] hover:bg-[#443c2e] text-white hover:text-white focus:z-10 ">Tidak</button>
-                                                        </div>
+                    
+                                                                    <div class="p-4 md:p-5 text-center">
+                                                                        <svg class="mx-auto mb-4 text-white w-12 h-12"
+                                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                                            fill="none" viewBox="0 0 20 20">
+                                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                                stroke-linejoin="round" stroke-width="2"
+                                                                                d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                                        </svg>
+                                                                        <h3 class="mb-5 text-lg font-normal text-white ">
+                                                                            Anda Yakin Ingin Menerima Dokter?</h3>
+                                                                        <a href="/data-pengajuan"
+                                                                            class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                                                                            Ya
+                                                                        </a>
+                                                                        <button data-modal-hide="popup-modal-1"
+                                                                            aria-hidden="true" type="button"
+                                                                            class="py-2.5 px-5 ms-3 text-sm font-medium rounded-lg bg-[#534B3C] hover:bg-[#443c2e] text-white hover:text-white focus:z-10 ">Tidak</button>
+                                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <script>
-                                                document.addEventListener('DOMContentLoaded', function() {
-                                                    const deleteButtons = document.querySelectorAll('.delete-button');
-                                                    deleteButtons.forEach(button => {
-                                                        button.addEventListener('click', function() {
-                                                            const index = this.dataset.index;
-                                                            const modal = document.getElementById('popup-modal');
-                                                            modal.classList.remove('hidden');
-                                                            modal.setAttribute('aria-hidden', 'false');
-                                                            modal.setAttribute('tabindex', '0');
-                                                            const modalTidak = document.getElementById('popup-modal');
-                                                            modalTidak.classList.remove('hidden');
-                                                            modalTidak.setAttribute('aria-hidden', 'false');
-                                                            modalTidak.setAttribute('tabindex', '0');
-                                                            const closeButton = modal.querySelector(
-                                                                '[data-modal-hide="popup-modal-delete"]');
-                                                            closeButton.addEventListener('click', () => {
-                                                                modal.classList.add('hidden');
-                                                                modal.setAttribute('aria-hidden', 'true');
-                                                                modal.setAttribute('tabindex', '-1');
+                                    
+                                            <div id="popup-modal" tabindex="-1" aria-hidden="true"
+                                                class="z-50 hidden fixed top-0 right-0 left-[260px] bottom-0 flex items-center justify-center backdrop-blur-sm bg-opacity-50">
+                                                    <div class="relative p-4 w-full max-w-md max-h-full">
+                                                        <div class="relative bg-[#84A584] rounded-lg shadow">
+                                                            <button type="button" class="absolute top-3 end-2.5 text-white bg-transparent bg-[#534B3C] hover:bg-[#443c2e] rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                                                                data-modal-hide="popup-modal-delete">
+                                                                <svg class="w-3 h-3" aria-hidden="true"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="white"
+                                                                    viewBox="0 0 14 14">
+                                                                    <path stroke="white" stroke-linecap="round"
+                                                                        stroke-linejoin="round" stroke-width="2"
+                                                                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                                                </svg>
+                                                                    <span class="sr-only">Close modal</span>
+                                                            </button>
+                                                                <div class="p-4 md:p-5 text-center">
+                                                                    <svg class="mx-auto mb-4 text-white w-12 h-12"
+                                                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                                        fill="none" viewBox="0 0 20 20">
+                                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                                            stroke-linejoin="round" stroke-width="2"
+                                                                            d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                                                    </svg>
+                                                                    <h3 class="mb-5 text-lg font-normal text-white ">
+                                                                        Anda Yakin Ingin Menolak Dokter?</h3>
+                                                                    <button data-modal-hide="popup-modal-ya" type="button"
+                                                                        class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                                                                        Ya
+                                                                    </button>
+                                                                    <button data-modal-hide="popup-modal-tidak"
+                                                                        aria-hidden="true" type="button"
+                                                                        class="py-2.5 px-5 ms-3 text-sm font-medium rounded-lg bg-[#534B3C] hover:bg-[#443c2e] text-white hover:text-white focus:z-10 ">Tidak</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                        <script>
+                                                            document.addEventListener('DOMContentLoaded', function() {
+                                                                const deleteButtons = document.querySelectorAll('.delete-button');
+                                                                deleteButtons.forEach(button => {
+                                                                    button.addEventListener('click', function() {
+                                                                        const index = this.dataset.index;
+                                                                        const modal = document.getElementById('popup-modal');
+                                                                        modal.classList.remove('hidden');
+                                                                        modal.setAttribute('aria-hidden', 'false');
+                                                                        modal.setAttribute('tabindex', '0');
+                                                                        const modalTidak = document.getElementById('popup-modal');
+                                                                        modalTidak.classList.remove('hidden');
+                                                                        modalTidak.setAttribute('aria-hidden', 'false');
+                                                                        modalTidak.setAttribute('tabindex', '0');
+                                                                        const closeButton = modal.querySelector(
+                                                                            '[data-modal-hide="popup-modal-delete"]');
+                                                                        closeButton.addEventListener('click', () => {
+                                                                            modal.classList.add('hidden');
+                                                                            modal.setAttribute('aria-hidden', 'true');
+                                                                            modal.setAttribute('tabindex', '-1');
+                                                                        });
+                                                                        const closeButtonTidak = modalTidak.querySelector(
+                                                                            '[data-modal-hide="popup-modal-tidak"]');
+                                                                        closeButtonTidak.addEventListener('click', () => {
+                                                                            modalTidak.classList.add('hidden');
+                                                                            modalTidak.setAttribute('aria-hidden', 'true');
+                                                                            modalTidak.setAttribute('tabindex', '-1');
+                                                                        });
+                                                                    });
+                                                                });
                                                             });
-                                                            const closeButtonTidak = modalTidak.querySelector(
-                                                                '[data-modal-hide="popup-modal-tidak"]');
-                                                            closeButtonTidak.addEventListener('click', () => {
-                                                                modalTidak.classList.add('hidden');
-                                                                modalTidak.setAttribute('aria-hidden', 'true');
-                                                                modalTidak.setAttribute('tabindex', '-1');
-                                                            });
-                                                        });
-                                                    });
-                                                });
-                                            </script>
-                                        </div>
-                                    </td>
-                                </tr>
+                                                        </script>
+                                                    </div>
+                                                </td>
+                                            </tr>
                         </tbody>
                     </table>
                 </div>

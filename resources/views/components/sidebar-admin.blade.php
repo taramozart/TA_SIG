@@ -1,19 +1,33 @@
-    <style>
+ 
+ 
+ <style>
         /* form */
         .icont-form-si {
             transition: stroke 0.3s;
+            /* Efek transisi pada perubahan warna stroke */
+        }
+
+        .kotak{
+            background-color: #534B3C;
+        }
+        .kotak-base{
+            background-color: #EEE7DA;
         }
 
         .group:hover .icont-form-si {
             stroke: #297785;
+            /* stroke saat elemen dalam keadaan hover */
         }
 
+        /* cek status */
         .icon-cek-statussi {
             transition: stroke 0.3s;
+            /* Efek transisi pada perubahan warna stroke */
         }
 
         .group:hover .icon-cek-statussi {
             stroke: #297785;
+            /* stroke saat elemen dalam keadaan hover */
         }
     </style>
 
@@ -36,9 +50,9 @@
                     <li class="absolute flex items-center justify-center inset-x-0 mt-5">
                         <a href="/data-baru-dokter" type="button"
                             class="group w-[90%] h-[50px] flex gap-6 text-lg font-medium
-  @if (in_array(Request::path(), $databarudokter)) rounded-lg bg-[#534B3C] text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white
+  @if (in_array(Request::path(), $databarudokter)) rounded-lg bg-[#534B3C] kotak text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white
         @else
-            text-black rounded-lg bg-[#EEE7DA] hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
+            text-black rounded-lg bg-[#EEE7DA] kotak-base hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
                             <div class="text-center justify-center items-center flex font-bold m-auto">Data Baru Dokter
                             </div>
                         </a>
@@ -46,13 +60,16 @@
                     {{-- Kelola data dokter --}}
                     <li class="absolute flex items-center justify-center inset-x-0 mt-[80px]">
                         @php
-                            $keloladatadokter = ['kelola-data-dokter', 'kelola-data-dokter/lihat', 'kelola-data-dokter/edit'];
+                            $keloladatadokter = [
+                                'kelola-data-dokter', 
+                                'kelola-data-dokter/edit',
+                                'kelola-data-dokter/lihat'];
                         @endphp
                         <a href="/kelola-data-dokter" type="button"
                             class="group w-[90%] h-[50px] flex gap-6 text-lg font-medium
-        @if (in_array(Request::path(), $keloladatadokter)) rounded-lg bg-[#534B3C] text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white
+        @if (in_array(Request::path(), $keloladatadokter)) rounded-lg bg-[#534B3C] kotak text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white
         @else
-            text-black rounded-lg bg-[#EEE7DA] hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
+            text-black rounded-lg bg-[#EEE7DA] kotak-base hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
                             <div class="text-center justify-center items-center flex font-bold m-auto">Kelola Data
                                 Dokter</div>
                         </a>
@@ -70,7 +87,7 @@
                             class="group w-[90%] h-[50px] flex gap-6 text-lg font-medium
         @if (in_array(Request::path(), $pengajuandokter)) rounded-lg bg-[#534B3C] text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white
         @else
-            text-black rounded-lg bg-[#EEE7DA] hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
+            text-black rounded-lg bg-[#EEE7DA] kotak-base hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
                             <div class="text-center justify-center items-center flex font-bold m-auto">Pengajuan Dokter
                             </div>
                         </a>
@@ -89,7 +106,7 @@
                             class="group w-[90%] h-[50px] flex gap-6 text-lg font-medium
         @if (in_array(Request::path(), $datapengajuan)) rounded-lg bg-[#534B3C] text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white
         @else
-            text-black rounded-lg bg-[#EEE7DA] hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
+            text-black rounded-lg bg-[#EEE7DA] kotak-base hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
                             <div class="text-center justify-center items-center flex font-bold m-auto">Data Pengajuan
                             </div>
                         </a>
@@ -103,14 +120,14 @@
                             class="group w-[90%] h-[50px] flex gap-6 text-lg font-medium
         @if (in_array(Request::path(), $artikelkesehatan)) rounded-lg bg-[#534B3C] text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white
         @else
-            text-black rounded-lg bg-[#EEE7DA] hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
+            text-black rounded-lg bg-[#EEE7DA] kotak-base hover:bg-[#534B3C] hover:text-white focus:z-10 focus:ring-2 focus:ring-white focus:text-white @endif">
                             <div class="text-center justify-center items-center flex font-bold m-auto">Artikel Kesehatan
                             </div>
                         </a>
                     </li>
                     <li class="absolute w-full -inset-x-1 bottom-0">
                         <a type="button" id="logOut" href="/login"
-                            class="gap-3 w-52 py-1 mb-5 flex items-start justify-start m-auto rounded-md bg-[#534B3C] hover:bg-[#443c2e] text-white p-2 pt-2 pb-2">
+                            class="gap-3 w-52 py-1 mb-5 flex items-start justify-start m-auto rounded-md kotak bg-[#534B3C] hover:bg-[#443c2e] text-white p-2 pt-2 pb-2">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="30" height="30" fill="url(#pattern0)" />
