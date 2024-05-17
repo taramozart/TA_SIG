@@ -106,10 +106,7 @@
                                             Spesialis Penyakit Dalam
                                         </div>
                                         <div class="no flex gap-2 items-center">
-                                            <div class="logo">
-                                                <img src="/Images/telepon.svg" alt="">
-                                            </div>
-                                            <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                            <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                         </div>
                                     </div>
                                     <div class="star">
@@ -161,10 +158,8 @@
                                             Spesialis Penyakit Dalam
                                         </div>
                                         <div class="no flex gap-2 items-center">
-                                            <div class="logo">
-                                                <img src="/Images/telepon.svg" alt="">
-                                            </div>
-                                            <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                            <div class="no text-[12px] text-[#84A584]">
+                                                1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                         </div>
                                     </div>
                                     <div class="star">
@@ -217,10 +212,7 @@
                                             Spesialis Penyakit Dalam
                                         </div>
                                         <div class="no flex gap-2 items-center">
-                                            <div class="logo">
-                                                <img src="/Images/telepon.svg" alt="">
-                                            </div>
-                                            <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                            <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                         </div>
                                     </div>
                                     <div class="star">
@@ -273,10 +265,7 @@
                                             Spesialis Penyakit Dalam
                                         </div>
                                         <div class="no flex gap-2 items-center">
-                                            <div class="logo">
-                                                <img src="/Images/telepon.svg" alt="">
-                                            </div>
-                                            <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                            <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                         </div>
                                     </div>
                                     <div class="star">
@@ -329,10 +318,7 @@
                                             Spesialis Penyakit Dalam
                                         </div>
                                         <div class="no flex gap-2 items-center">
-                                            <div class="logo">
-                                                <img src="/Images/telepon.svg" alt="">
-                                            </div>
-                                            <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                            <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                         </div>
                                     </div>
                                     <div class="star">
@@ -395,10 +381,7 @@
                                     Spesialis Penyakit Dalam
                                 </div>
                                 <div class="no flex gap-2 items-center">
-                                    <div class="logo">
-                                        <img src="/Images/telepon.svg" alt="">
-                                    </div>
-                                    <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                    <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                 </div>
                             </div>
                             <div class="star">
@@ -420,10 +403,7 @@
                                     Spesialis Penyakit Dalam
                                 </div>
                                 <div class="no flex gap-2 items-center">
-                                    <div class="logo">
-                                        <img src="/Images/telepon.svg" alt="">
-                                    </div>
-                                    <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                    <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                 </div>
                             </div>
                             <div class="star">
@@ -445,10 +425,7 @@
                                     Spesialis Penyakit Dalam
                                 </div>
                                 <div class="no flex gap-2 items-center">
-                                    <div class="logo">
-                                        <img src="/Images/telepon.svg" alt="">
-                                    </div>
-                                    <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                    <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                 </div>
                             </div>
                             <div class="star">
@@ -470,10 +447,7 @@
                                     Spesialis Penyakit Dalam
                                 </div>
                                 <div class="no flex gap-2 items-center">
-                                    <div class="logo">
-                                        <img src="/Images/telepon.svg" alt="">
-                                    </div>
-                                    <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                    <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                 </div>
                             </div>
                             <div class="star">
@@ -495,10 +469,7 @@
                                     Spesialis Penyakit Dalam
                                 </div>
                                 <div class="no flex gap-2 items-center">
-                                    <div class="logo">
-                                        <img src="/Images/telepon.svg" alt="">
-                                    </div>
-                                    <div class="no text-[12px] text-[#84A584]">0856234234333</div>
+                                    <div class="no text-[12px] text-[#84A584]">1871/503/00634/446-SIP.M/III.16/IX/2023</div>
                                 </div>
                             </div>
                             <div class="star">

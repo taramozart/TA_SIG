@@ -26,6 +26,12 @@
                         placeholder="Masukkan Nama" required />
                 </div>
                 <div class="w-full mb-1">
+                    <label htmlFor="name" class="text-black font-bold">No. SIP</label>
+                    <input type="text" id="name"
+                        class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full bg-transparent"
+                        placeholder="Masukkan No. SIP" required />
+                </div>
+                <div class="w-full mb-1">
                     <label htmlFor="name" class="text-black font-bold">Bidang Spesialisasi</label>
                     <select id="name"
                         class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full h-[40px] bg-transparent"
@@ -127,12 +133,6 @@
 </div>
 
 @push('scripts')
-    <script>
-        const input = document.getElementById("message").value;
-        document.getElementById("message").value = "Jl Jati 1 No 1"
-        const searchBox = new google.maps.places.SearchBox(input);
-        console.log(searchBox)
-    </script>
     <script>
         const defaultLocation = [{{ (float)env('MAPBOX_DEFAULT_LONG') }}, {{ (float)env('MAPBOX_DEFAULT_LAT') }}];
 
@@ -667,98 +667,6 @@
 
         loadLocations();
         map.addControl(new mapboxgl.NavigationControl());
-
-        const customData = {
-            'features': [
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'title': 'Jl. Jati I No.1, Sepang Jaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132, Indonesia'
-                    },
-                    'geometry': {
-                        'coordinates': [105.2703624, -5.3755207],
-                        'type': 'Point'
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'title': 'Lincoln Park is special'
-                    },
-                    'geometry': {
-                        'coordinates': [-87.637596, 41.940403],
-                        'type': 'Point'
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'title': 'Burnham Park is special'
-                    },
-                    'geometry': {
-                        'coordinates': [-87.603735, 41.829985],
-                        'type': 'Point'
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'title': 'Millennium Park is special'
-                    },
-                    'geometry': {
-                        'coordinates': [-87.622554, 41.882534],
-                        'type': 'Point'
-                    }
-                }
-            ],
-            'type': 'FeatureCollection'
-        };
-
-        function forwardGeocoder(query) {
-            const matchingFeatures = [];
-            for (const feature of customData.features) {
-                // Handle queries with different capitalization
-                // than the source data by calling toLowerCase().
-                if (
-                    feature.properties.title
-                        .toLowerCase()
-                        .includes(query.toLowerCase())
-                ) {
-                    // Add a tree emoji as a prefix for custom
-                    // data results using carmen geojson format:
-                    // https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
-                    feature['place_name'] = `🌲 ${feature.properties.title}`;
-                    feature['center'] = feature.geometry.coordinates;
-                    feature['place_type'] = ['park'];
-                    matchingFeatures.push(feature);
-                }
-            }
-            return matchingFeatures;
-        }
-        var geocoder = new MapboxGeocoder({
-            accessToken: mapboxgl.accessToken,
-            mapboxgl: mapboxgl,
-            countries : "id",
-            bbox: [105.175532, -5.532048, 105.359372,-5.335307],
-            types: "address",
-            fuzzyMatch: true,
-            limit: 10,
-            localGeocoder: forwardGeocoder,
-        });
-        map.addControl (geocoder, 'top-left')
-
-        geocoder.on('result', (e) => {
-            console.log(e);
-            // var place_name = result.result.place_name
-            // var instansi_name = result.result.text
-            // var longtitude = result.result.center[0]
-            // var lattitude = result.result.center[1]
-            // var jalan_name = place_name.replace(instansi_name+", ",'').replace(instansi_name,'');
-            // @this.title = instansi_name
-            // @this.long = longtitude
-            // @this.lat = lattitude
-            // @this.description = jalan_name
-        })
 
         var marker = new mapboxgl.Marker();
 

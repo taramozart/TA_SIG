@@ -26,6 +26,12 @@
                         placeholder="Masukkan Nama" required />
                 </div>
                 <div class="w-full mb-1">
+                    <label htmlFor="name" class="text-black font-bold">No.SIP</label>
+                    <input type="text" id="name"
+                        class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full bg-transparent"
+                        placeholder="Masukkan No. SIP" required />
+                </div>
+                <div class="w-full mb-1">
                     <label htmlFor="name" class="text-black font-bold">Bidang Spesialisasi</label>
                     <select id="name"
                         class="border border-[#84A584] text-gray-900 text-sm rounded-md focus:ring-[#84A584] focus:border-[#84A584] px-2 w-full h-[40px] bg-transparent"

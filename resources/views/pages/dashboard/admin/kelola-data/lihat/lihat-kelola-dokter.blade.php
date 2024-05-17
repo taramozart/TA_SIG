@@ -65,6 +65,14 @@
                                                 </tr>
                                                 <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
                                                     <td class="px-3 py-2 font-bold text-[16px]">
+                                                        No.SIP
+                                                    </td>
+                                                    <td class="px-5 py-2 border-b border-[#D9D9D9]">
+                                                        11/22/3333/111
+                                                    </td>
+                                                </tr>
+                                                <tr class="bg-white hover:bg-[#84A584] text-black hover:text-white">
+                                                    <td class="px-3 py-2 font-bold text-[16px]">
                                                         Spesialisasi
                                                     </td>
                                                     <td class="px-5 py-2 border-b border-[#D9D9D9]">
